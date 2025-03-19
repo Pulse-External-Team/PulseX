@@ -1,6 +1,8 @@
-# PulseAPI Documentation for C# (WinForms / WPF)
+# PulseAPI Documentation
 
-Welcome to the **PulseAPI** for C# developers! This API offers various functions that you can use in your WinForms or WPF applications. The use of the API is free of charge, but you must include a **notice stating that the PulseAPI from PulseExternal is being used** in your application.
+👉 If you have not yet downloaded the PulseAPI, get it [HERE](https://github.com/Pulse-External-Team/PulseX/releases/download/PulseX-OG/PulseAPI.dll).
+
+Welcome to the PulseAPI for C# developers! This API offers various functions that you can use in your WinForms or WPF applications. The use of the API is free of charge, but you must include a notice stating that the PulseAPI from PulseExternal is being used in your application.
 
 ---
 
