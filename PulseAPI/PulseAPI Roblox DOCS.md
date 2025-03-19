@@ -1,18 +1,10 @@
-# PulseAPI Documentation
+# PulseAPI Documentation for C# (WinForms / WPF)
 
-👉 If you have not yet downloaded the PulseAPI, get it [HERE](https://github.com/Pulse-External-Team/PulseX/releases/download/PulseX-OG/PulseAPI.dll).
+👉 **If you have not yet downloaded the PulseAPI, get it [HERE](https://github.com/Pulse-External-Team/PulseX/releases/download/PulseX-OG/PulseAPI.dll).**
 
-Welcome to the PulseAPI for C# developers! This API offers various functions that you can use in your WinForms or WPF applications. The use of the API is free of charge, but you must include a notice stating that the PulseAPI from PulseExternal is being used in your application.
+Welcome to the **PulseAPI** for C# developers! This API offers various functions that you can use in your WinForms or WPF applications. The use of the API is free of charge, but you must include a **notice stating that the PulseAPI from PulseExternal is being used** in your application.
 
 ---
-
-## Usage Requirement
-
-Ensure you include the following `using` directive at the beginning of your C# file:
-
-```csharp
-using PulseAPI;
-```
 
 ## License Information:
 
@@ -41,38 +33,55 @@ this.Controls.Add(creditsLabel);
 
 # PulseAPI Classes and Functions
 
+### Loading the API
+
+To use the PulseAPI in your C# project, you must include the following `using` directive at the top of your code:
+
+```csharp
+using PulseAPI;
+```
+
 ## **PulseAPI.Api** – The Main Class
 
 This class provides general functions for linking to external pages.
 
-### a) **YouTube()**
+### 1) **YouTube()**
 
 Opens your YouTube channel in the default browser.
 
 **Usage:**
 
 ```csharp
-PulseAPI.Api.YouTube();
+private void YTbtn_Click(object sender, EventArgs e)
+{
+    PulseAPI.Api.YouTube();
+}
 ```
 
-### b) **Discord()**
+### 2) **Discord()**
 
 Opens your Discord server in the default browser.
 
 **Usage:**
 
 ```csharp
-PulseAPI.Api.Discord();
+private void DCbtn_Click(object sender, EventArgs e)
+{
+    PulseAPI.Api.Discord();
+}
 ```
 
-### c) **Github()**
+### 3) **Github()**
 
 Opens your GitHub profile in the default browser.
 
 **Usage:**
 
 ```csharp
-PulseAPI.Api.Github();
+private void GHbtn_Click(object sender, EventArgs e)
+{
+    PulseAPI.Api.Github();
+}
 ```
 
 ---
@@ -81,24 +90,30 @@ PulseAPI.Api.Github();
 
 This class contains functions for interacting with the Roblox application and retrieving user information.
 
-### a) **KillRoblox()**
+### 1) **KillRoblox()**
 
 Terminates the Roblox application if it is open.
 
 **Usage:**
 
 ```csharp
-PulseAPI.RobloxAPI.KillRoblox();
+private void KillRBXbtn_Click(object sender, EventArgs e)
+{
+    PulseAPI.RobloxAPI.KillRoblox();
+}
 ```
 
-### b) **OpenRoblox()**
+### 2) **OpenRoblox()**
 
 Starts the Roblox application.
 
 **Usage:**
 
 ```csharp
-PulseAPI.RobloxAPI.OpenRoblox();
+private void OpenRBXbtn_Click(object sender, EventArgs e)
+{
+    PulseAPI.RobloxAPI.OpenRoblox();
+}
 ```
 
 ### c) **RestartRoblox()**
@@ -108,7 +123,10 @@ Restarts Roblox by closing and reopening the application.
 **Usage:**
 
 ```csharp
-PulseAPI.RobloxAPI.RestartRoblox();
+private void RestartRBXbtn_Click(object sender, EventArgs e)
+{
+    PulseAPI.RobloxAPI.RestartRoblox();
+}
 ```
 
 ### d) **GetUsername()**
@@ -118,7 +136,7 @@ Retrieves the username of the currently logged-in Roblox account.
 **Usage:**
 
 ```csharp
-string username = PulseAPI.RobloxAPI.GetUsername();
+label1.Text = PulseAPI.RobloxAPI.GetUsername();
 ```
 
 ### e) **GetDisplayname()**
@@ -128,7 +146,7 @@ Retrieves the display name of the current Roblox user.
 **Usage:**
 
 ```csharp
-string displayName = PulseAPI.RobloxAPI.GetDisplayname();
+label1.Text = PulseAPI.RobloxAPI.GetDisplayname();
 ```
 
 ### f) **GetAvatar()**
@@ -148,7 +166,7 @@ Returns the profile description of the currently logged-in Roblox user.
 **Usage:**
 
 ```csharp
-string description = PulseAPI.RobloxAPI.GetDescription();
+label1.Text = PulseAPI.RobloxAPI.GetDescription();
 ```
 
 ### h) **GetTotalFriends()**
@@ -158,7 +176,7 @@ Returns the number of friends of the current Roblox user.
 **Usage:**
 
 ```csharp
-int totalFriends = PulseAPI.RobloxAPI.GetTotalFriends();
+label1.Text = PulseAPI.RobloxAPI.GetTotalFriends();
 ```
 
 ### i) **GetTotalGroups()**
@@ -168,17 +186,17 @@ Returns the number of groups the current Roblox user is a member of.
 **Usage:**
 
 ```csharp
-int totalGroups = PulseAPI.RobloxAPI.GetTotalGroups();
+label1.Text = PulseAPI.RobloxAPI.GetTotalGroups();
 ```
 
 ### j) **GetCreatedDate()**
 
-Returns the creation date of the current Roblox account.
+Get the date where the Roblox Account was created.
 
 **Usage:**
 
 ```csharp
-DateTime createdDate = PulseAPI.RobloxAPI.GetCreatedDate();
+label1.Text = PulseAPI.RobloxAPI.GetCreatedDate();
 ```
 
 ### k) **GetBannedStatus()**
@@ -188,7 +206,7 @@ Checks if the current Roblox user is banned.
 **Usage:**
 
 ```csharp
-bool isBanned = PulseAPI.RobloxAPI.GetBannedStatus();
+label1.Text = PulseAPI.RobloxAPI.GetBannedStatus();
 ```
 
 ### l) **JoinPlace()**
@@ -213,5 +231,4 @@ PulseAPI.RobloxAPI.JoinPlace("12345678910");
 
 ---
 
-This documentation describes the use of the **PulseAPI** in C# for WinForms and WPF applications. If you have any questions or issues, contact PulseExternal.
-
+This documentation describes the use of the **PulseAPI** in C# for WinForms and WPF applications. If you have any ques
