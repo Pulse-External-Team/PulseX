@@ -116,7 +116,7 @@ private void OpenRBXbtn_Click(object sender, EventArgs e)
 }
 ```
 
-### c) **RestartRoblox()**
+### 3) **RestartRoblox()**
 
 Restarts Roblox by closing and reopening the application.
 
@@ -129,7 +129,7 @@ private void RestartRBXbtn_Click(object sender, EventArgs e)
 }
 ```
 
-### d) **GetUsername()**
+### 4) **GetUsername()**
 
 Retrieves the username of the currently logged-in Roblox account.
 
@@ -139,7 +139,7 @@ Retrieves the username of the currently logged-in Roblox account.
 label1.Text = PulseAPI.RobloxAPI.GetUsername();
 ```
 
-### e) **GetDisplayname()**
+### 5) **GetDisplayname()**
 
 Retrieves the display name of the current Roblox user.
 
@@ -149,7 +149,7 @@ Retrieves the display name of the current Roblox user.
 label1.Text = PulseAPI.RobloxAPI.GetDisplayname();
 ```
 
-### f) **GetAvatar()**
+### 6) **GetAvatar()**
 
 Retrieves the avatar image URL of the current Roblox user.
 
@@ -159,7 +159,7 @@ Retrieves the avatar image URL of the current Roblox user.
 string avatarUrl = PulseAPI.RobloxAPI.GetAvatar();
 ```
 
-### g) **GetDescription()**
+### 7) **GetDescription()**
 
 Returns the profile description of the currently logged-in Roblox user.
 
@@ -169,7 +169,7 @@ Returns the profile description of the currently logged-in Roblox user.
 label1.Text = PulseAPI.RobloxAPI.GetDescription();
 ```
 
-### h) **GetTotalFriends()**
+### 8) **GetTotalFriends()**
 
 Returns the number of friends of the current Roblox user.
 
@@ -179,7 +179,7 @@ Returns the number of friends of the current Roblox user.
 label1.Text = PulseAPI.RobloxAPI.GetTotalFriends();
 ```
 
-### i) **GetTotalGroups()**
+### 9) **GetTotalGroups()**
 
 Returns the number of groups the current Roblox user is a member of.
 
@@ -189,7 +189,7 @@ Returns the number of groups the current Roblox user is a member of.
 label1.Text = PulseAPI.RobloxAPI.GetTotalGroups();
 ```
 
-### j) **GetCreatedDate()**
+### 10) **GetCreatedDate()**
 
 Get the date where the Roblox Account was created.
 
@@ -199,7 +199,7 @@ Get the date where the Roblox Account was created.
 label1.Text = PulseAPI.RobloxAPI.GetCreatedDate();
 ```
 
-### k) **GetBannedStatus()**
+### 11) **GetBannedStatus()**
 
 Checks if the current Roblox user is banned.
 
@@ -208,15 +208,43 @@ Checks if the current Roblox user is banned.
 ```csharp
 label1.Text = PulseAPI.RobloxAPI.GetBannedStatus();
 ```
-
-### l) **JoinPlace()**
+### 12) **JoinPlace()**
 
 Allows the user to join a specific Roblox game (Place). The Place ID must be passed as an argument.
 
 **Usage:**
 
 ```csharp
-PulseAPI.RobloxAPI.JoinPlace("12345678910");
+private void Joinbtn_Click(object sender, EventArgs e)
+{
+    PulseAPI.RobloxAPI.JoinPlace("12345678910");
+}
+```
+
+---
+
+## **PulseAPI.WindowzAPI** – Windows-Specific Functions
+
+This class provides functions to retrieve system information.
+
+### 1) **GetWinUsername()**
+
+Returns the username of the currently logged-in Windows user.
+
+**Usage:**
+
+```csharp
+label1.Text = PulseAPI.WindowzAPI.GetWinUsername();
+```
+
+### 2) **GetIP()**
+
+Returns the current public IP address of the machine.
+
+**Usage:**
+
+```csharp
+label1.Text = PulseAPI.WindowzAPI.GetIP();
 ```
 
 ---
@@ -231,4 +259,5 @@ PulseAPI.RobloxAPI.JoinPlace("12345678910");
 
 ---
 
-This documentation describes the use of the **PulseAPI** in C# for WinForms and WPF applications. If you have any ques
+This documentation describes the use of the **PulseAPI** in C# for WinForms and WPF applications. If you have any questions or issues, contact PulseExternal.
+
