@@ -11,7 +11,6 @@ Welcome to the PulseAPI for C# developers! This API offers various functions tha
 Ensure you include the following `using` directive at the beginning of your C# file:
 
 ```csharp
-// Import API
 using PulseAPI;
 ```
 
@@ -53,10 +52,7 @@ Opens your YouTube channel in the default browser.
 **Usage:**
 
 ```csharp
-private void YTbtn_Click(object sender, RoutedEventArgs e)
-{
-  PulseAPI.Api.YouTube();
-}
+PulseAPI.Api.YouTube();
 ```
 
 ### b) **Discord()**
@@ -66,10 +62,7 @@ Opens your Discord server in the default browser.
 **Usage:**
 
 ```csharp
-private void DCbtn_Click(object sender, RoutedEventArgs e)
-{
 PulseAPI.Api.Discord();
-}
 ```
 
 ### c) **Github()**
@@ -79,10 +72,7 @@ Opens your GitHub profile in the default browser.
 **Usage:**
 
 ```csharp
-private void GHbtn_Click(object sender, RoutedEventArgs e)
-{
 PulseAPI.Api.Github();
-}
 ```
 
 ---
