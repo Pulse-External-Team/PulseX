@@ -1,4 +1,4 @@
-# PulseAPI Documentation for C# (WinForms / WPF)
+# PulseAPI Documentation
 
 👉 **If you have not yet downloaded the PulseAPI, get it [HERE](https://github.com/Pulse-External-Team/PulseX/releases/download/PulseX-OG/PulseAPI.dll).**
 
